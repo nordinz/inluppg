@@ -5,8 +5,5 @@ export const roundPrice = (data: number, curr: currency = "SEK"): string => {
 
   const res: string = roundedNumber.toFixed(2);
 
-  if (curr === "USD") {
-    return `${curr} ${res}`;
-  }
   return `${res} ${curr}`;
 };
